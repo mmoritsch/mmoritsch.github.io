@@ -1,8 +1,346 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monica Moritsch, PhD — Marine ecologist and GIS specialist transforming complex environmental data into actionable insights for coastal and marine ecosystem conservation.">
+    <meta name="author" content="Monica Moritsch">
+    <meta property="og:title" content="Monica Moritsch, PhD — Marine Ecology &amp; Spatial Analysis">
+    <meta property="og:description" content="Marine ecologist and GIS specialist transforming complex environmental data into actionable insights for coastal and marine ecosystem conservation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://monicamoritsch.com">
+    <title>Monica Moritsch, PhD — Marine Ecology &amp; Spatial Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<iframe src="https://www.arcgis.com/apps/MapJournal/index.html?appid=b998bbae95e64063888d31582aec6000" 
-	style="position: absolute;  border: none; width: 97%; height: 95%"></iframe>
-<p></p>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ========== Header / Navigation ========== -->
+    <header class="header header--transparent" role="banner">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo" aria-label="Monica Moritsch home">Monica Moritsch</a>
+            <div class="nav__overlay" aria-hidden="true"></div>
+            <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="nav__list" role="list">
+                    <li><a class="nav__link" href="#about">About</a></li>
+                    <li><a class="nav__link" href="#services">Services</a></li>
+                    <li><a class="nav__link" href="#work">Work</a></li>
+                    <li><a class="nav__link" href="publications.html">Publications</a></li>
+                    <li><a class="nav__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ========== Hero ========== -->
+        <section class="hero" aria-label="Introduction">
+            <div class="container hero__content">
+                <span class="hero__tagline">Marine Ecology &amp; Spatial Analysis</span>
+                <h1>Monica Moritsch, PhD</h1>
+                <p class="hero__subtitle">Marine Ecologist &amp; GIS Specialist</p>
+                <p class="hero__pitch">Transforming complex environmental data into actionable insights for coastal and marine ecosystem conservation — from field surveys and drone mapping to spatial analysis and science communication.</p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">Get in Touch</a>
+                    <a href="#work" class="btn btn--outline">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== About ========== -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about__grid">
+                    <img src="images/Headshot.jpg"
+                         alt="Portrait of Monica Moritsch smiling outdoors among trees"
+                         class="about__photo"
+                         width="300" height="300"
+                         loading="lazy">
+                    <div class="about__text">
+                        <h2>About Me</h2>
+                        <p>I am a marine biologist investigating opportunities for scaling climate change mitigation abilities of marine and coastal ecosystems. I have spent considerable time quantifying ecosystem services of marine and aquatic ecosystems around the world with the <a href="https://www.youtube.com/watch?v=OlHe1MPj8p8">Environmental Defense Fund</a>, <a href="https://geonarrative.usgs.gov/centralvalleyfutures/">US Geological Survey</a>, the <a href="https://www.marinemapping.org/">Marine Mapping Lab</a> at Deakin University, and <a href="https://oceansolutions.stanford.edu/">Stanford Center for Ocean Solutions</a>. My work bridges the gap between scientific research and creating practical, data-backed tools for resource managers and conservation practitioners.</p>
+                        <p>As a marine spatial ecologist and blue carbon scientist, I bring extensive experience in geospatial modeling, intertidal field surveys, drone-based remote sensing, and research database management. I am also an FAA-certified drone pilot, enabling me to handle the full spectrum of project tasks, including data collection, reporting, and building unique communication tools.</p>
+
+                        <div class="about__education">
+                            <h3>Education</h3>
+                            <ul role="list">
+                                <li>Ph.D. Ecology and Evolutionary Biology, University of California, Santa Cruz</li>
+                                <li>M.A. Ecology and Evolutionary Biology, University of California, Santa Cruz</li>
+                                <li>B.S. Molecular Environmental Biology, University of California, Berkeley</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Services ========== -->
+        <section id="services" class="section section--alt">
+            <div class="container">
+                <div class="section__header">
+                    <h2>What I Offer</h2>
+                    <p>Comprehensive scientific consulting, from field data collection through spatial analysis to impactful science communication.</p>
+                </div>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M8 24h32M24 4c-5 6-8 13-8 20s3 14 8 20c5-6 8-13 8-20s-3-14-8-20"/>
+                        </svg>
+                        <h3>Ecosystem Services Modeling</h3>
+                        <p>Blue carbon quantification, coastal protection modeling, and climate adaptation analysis for wetlands, reefs, and marine habitats.</p>
+                    </div>
+                    <div class="service-card">
+                        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <rect x="6" y="6" width="36" height="36" rx="3"/>
+                            <path d="M6 18h36M18 6v36"/>
+                            <circle cx="30" cy="30" r="4" fill="currentColor" stroke="none"/>
+                        </svg>
+                        <h3>GIS &amp; Spatial Analysis</h3>
+                        <p>Over 12 years of GIS expertise — geospatial modeling, remote sensing integration, hotspot analysis, and custom GIS workflows.</p>
+                    </div>
+                    <div class="service-card">
+                        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M8 40V12l16-8 16 8v28"/>
+                            <path d="M4 40h40"/>
+                            <path d="M16 20h16M16 28h12"/>
+                        </svg>
+                        <h3>Map Production &amp; Cartography</h3>
+                        <p>Publication-quality maps, ESRI Story Maps, site directories, trail systems, and multi-layered map panels for reports and presentations.</p>
+                    </div>
+                    <div class="service-card">
+                        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M24 4L8 14v10l16 10 16-10V14L24 4z"/>
+                            <path d="M24 24v20M8 14l16 10 16-10"/>
+                        </svg>
+                        <h3>Drone Mapping</h3>
+                        <p>FAA-certified drone pilot providing aerial surveys and mapping.</p>
+                    </div>
+                    <div class="service-card">
+                        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M6 38l10-14 8 8 8-12 10 18"/>
+                            <circle cx="36" cy="14" r="4"/>
+                        </svg>
+                        <h3>Data Collection &amp; Analysis</h3>
+                        <p>Field surveys, intertidal monitoring, citizen science coordination, and statistical analysis of environmental datasets.</p>
+                    </div>
+                    <div class="service-card">
+                        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 6h24a2 2 0 012 2v32a2 2 0 01-2 2H12a2 2 0 01-2-2V8a2 2 0 012-2z"/>
+                            <path d="M16 16h16M16 24h12M16 32h8"/>
+                        </svg>
+                        <h3>Communication Tools</h3>
+                        <p>Translating scientific findings into accessible reports, interactive visualizations, and policy-relevant deliverables for diverse audiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Featured Work ========== -->
+        <section id="work" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Featured Work</h2>
+                    <p>Selected projects spanning blue carbon, coastal resilience, marine disease ecology, and public engagement.</p>
+                </div>
+
+                <!-- Blue Carbon -->
+                <article class="project">
+                    <div class="project__image">
+                        <img src="images/image4.jpeg"
+                             alt="Mangrove wetland ecosystem with coastal vegetation and tidal flats in Victoria, Australia"
+                             loading="lazy"
+                             width="600" height="400">
+                    </div>
+                    <div class="project__body">
+                        <h3>Ecosystem Services Modeling: Blue Carbon</h3>
+                        <p>At the USGS Western Geographic Science Center, I modeled how sea level rise impacts ecosystem services provided by marshes and tidal forested wetlands of the Pacific Northwest. Focusing on soil carbon, I used GIS and soil models to project changes in carbon sequestration, informing the Billy Frank Jr. Nisqually National Wildlife Refuge's climate adaptation plans.</p>
+                        <p>I also modeled blue carbon sequestration in marine ecosystems of Victoria, Australia as part of a joint postdoctoral position with Deakin University and UC Santa Cruz. The resulting maps are being used by the Victorian government to prioritize areas for habitat conservation and marine spatial planning.</p>
+                        <a class="project__link" href="https://maps.oceanwealth.org/" aria-label="View Mapping Ocean Wealth portal">
+                            Explore Mapping Ocean Wealth
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blue Carbon Map Figure -->
+                <article class="project project--reverse">
+                    <div class="project__image">
+                        <img src="images/image6.jpeg"
+                             alt="Multi-panel map showing net carbon sequestration projections for Victoria, Australia coastal ecosystems under different management scenarios from 2020 to 2100"
+                             loading="lazy"
+                             width="600" height="500">
+                    </div>
+                    <div class="project__body">
+                        <h3>Map Production &amp; Cartographic Services</h3>
+                        <p>I make visually appealing maps to get your message across. With 12+ years of experience in GIS and cartography, I produce publication-quality maps ranging from simple and elegant to complex, multi-layered panels that cleanly convey detailed information.</p>
+                        <ul class="map-services-list" role="list">
+                            <li>Business location maps</li>
+                            <li>Site directories &amp; grids</li>
+                            <li>Trail system maps</li>
+                            <li>Drone &amp; satellite maps</li>
+                            <li>Hotspot analysis maps</li>
+                            <li>ESRI Story Maps</li>
+                            <li>Scientific publication figures</li>
+                            <li>Custom GIS workflows</li>
+                        </ul>
+                        <a class="project__link" href="https://doi.org/10.1016/j.scitotenv.2021.145962" aria-label="View Moritsch et al. 2021 publication">
+                            Moritsch et al. 2021, Sci. Total Environ.
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Coastal Protection -->
+                <article class="project">
+                    <div class="project__image">
+                        <img src="images/image5.jpeg"
+                             alt="Coastal flooding along a California road with waves crashing over rocks during a storm"
+                             loading="lazy"
+                             width="600" height="400">
+                    </div>
+                    <div class="project__body">
+                        <h3>Coastal Protection &amp; Climate Adaptation</h3>
+                        <p>At Stanford's Center for Ocean Solutions, I modeled how California's coastal habitats store carbon and mitigate flooding driven by sea level rise. I mapped where people and infrastructure were vulnerable to flooding under different levels of climate change severity as part of the Realizing Environmental Innovations Program.</p>
+                        <p>Our goal was to aid California's coastal jurisdictions in prioritizing natural habitats and climate adaptation in their Local Coastal Plan updates. I performed geospatial analyses and translated scientific information for an interdisciplinary team of policy experts, modelers, software developers, and biologists.</p>
+                    </div>
+                </article>
+
+                <!-- Sea Star Wasting -->
+                <article class="project project--reverse">
+                    <div class="project__image">
+                        <img src="images/image7.jpeg"
+                             alt="An orange sea star showing signs of deterioration from Sea Star Wasting Syndrome on rocky substrate"
+                             loading="lazy"
+                             width="600" height="400">
+                    </div>
+                    <div class="project__body">
+                        <h3>Sea Star Wasting Syndrome Research</h3>
+                        <p>At UC Santa Cruz, I earned my PhD studying intertidal ecology with the <a href="http://research.pbsci.ucsc.edu/eeb/rclab/">Raimondi-Carr Lab</a>, investigating which environmental and anthropogenic factors are associated with the appearance of <a href="https://marine.ucsc.edu/data-products/sea-star-wasting/index.html">Sea Star Wasting Syndrome</a> (SSWS).</p>
+                        <p>Using GIS to integrate data from the North American Pacific Coast, I used disease observations from intertidal monitoring and citizen science reports to search for correlations between disease presence and environmental patterns — including above-average temperatures, population density, low-tide exposure times, and proximity to wastewater outfalls.</p>
+                    </div>
+                </article>
+
+                <!-- Marine Reserves -->
+                <article class="project">
+                    <div class="project__image">
+                        <img src="images/image9.jpeg"
+                             alt="Beach visitors enjoying a sunny day along the Monterey Bay coastline with kayaks on shore"
+                             loading="lazy"
+                             width="600" height="400">
+                    </div>
+                    <div class="project__body">
+                        <h3>Beach Visitor Knowledge of Marine Reserves</h3>
+                        <p>I research the human aspects of conservation: what factors promote or hinder behavior for positive environmental outcomes. Tens of thousands of people visit California Marine Protected Areas (MPAs) each year, yet this paradoxically presents challenges for ensuring visitors are sensitive to their impacts.</p>
+                        <p>We surveyed over 650 visitors at Santa Cruz County beaches and found that while visitors generally supported environmental etiquette, many did not know where the MPAs were located. Over half had heard of marine reserves, but less than one third knew whether they were standing inside one — highlighting a disconnect between awareness and specific location knowledge.</p>
+                    </div>
+                </article>
+
+                <!-- Fieldwork -->
+                <article class="project project--reverse">
+                    <div class="project__image">
+                        <img src="images/image11.jpeg"
+                             alt="Monica Moritsch conducting intertidal field research on rocky shore, surrounded by equipment and mussel beds"
+                             loading="lazy"
+                             width="600" height="500">
+                    </div>
+                    <div class="project__body">
+                        <h3>Community Leadership</h3>
+                        <p>I am on the leadership board for the <a href="https://sites.google.com/view/mb-marinegis/">Monterey Bay Marine GIS User Group</a>, a professional networking organization supporting GIS training, capacity building, and increased awareness of marine and coastal spatial datasets among the broader GIS science community.</p>
+                        <p>I organize the annual conference by reaching out to venues and speakers to assemble a day of talks around a central theme in emerging geospatial research. </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========== Contact ========== -->
+        <section id="contact" class="section section--dark">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <h2>Let's Work Together</h2>
+                        <p>Whether you need ecosystem services modeling, custom cartography, drone surveys, or help translating science into action — I would love to hear about your project.</p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                <a href="https://www.linkedin.com/in/monica-moritsch-100/">LinkedIn</a>
+                            </div>
+                            <div class="contact__detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 113 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                                <a href="https://www.researchgate.net/profile/Monica_Moritsch">ResearchGate</a>
+                            </div>
+                            <div class="contact__detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                                <a href="https://scholar.google.com/citations?user=ruP766kAAAAJ&hl=en">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                        CONTACT FORM SETUP:
+                        This form uses Formspree for processing. To activate it:
+                        1. Create a free account at https://formspree.io
+                        2. Create a new form and copy the form endpoint ID
+                        3. Replace YOUR_FORM_ID below with your Formspree endpoint
+                        Example: action="https://formspree.io/f/xyzabcde"
+                    -->
+                    <form class="contact__form"
+                          action="https://formspree.io/f/YOUR_FORM_ID"
+                          method="POST"
+                          aria-label="Contact form">
+                        <div class="form__group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" required
+                                   placeholder="Your name" autocomplete="name">
+                        </div>
+                        <div class="form__group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required
+                                   placeholder="you@example.com" autocomplete="email">
+                        </div>
+                        <div class="form__group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject"
+                                   placeholder="Project inquiry">
+                        </div>
+                        <div class="form__group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" required
+                                      placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary form__submit">Send Message</button>
+                        <div class="form__status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <nav class="footer__links" aria-label="Footer links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="publications.html">Publications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p>&copy; 2025 Monica Moritsch, PhD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
