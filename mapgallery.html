@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Map gallery showcasing cartographic and GIS work by Monica Moritsch, PhD — blue carbon, coastal hazards, drone surveys, and more.">
+    <meta name="author" content="Monica Moritsch">
+    <meta property="og:title" content="Map Gallery — Monica Moritsch, PhD">
+    <meta property="og:description" content="Cartographic and GIS work spanning blue carbon modeling, coastal hazards, drone surveys, and spatial analysis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://monicamoritsch.com/mapgallery.html">
+    <title>Map Gallery — Monica Moritsch, PhD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ========== Header / Navigation ========== -->
+    <header class="header header--scrolled" role="banner">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo" aria-label="Monica Moritsch home">Monica Moritsch, PhD</a>
+            <div class="nav__overlay" aria-hidden="true"></div>
+            <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="nav__list" role="list">
+                    <li><a class="nav__link" href="index.html#about">About</a></li>
+                    <li><a class="nav__link" href="index.html#services">Services</a></li>
+                    <li><a class="nav__link" href="index.html#work">Work</a></li>
+                    <li><a class="nav__link" href="mapgallery.html">Map Gallery</a></li>
+                    <li><a class="nav__link" href="publications.html">Publications</a></li>
+                    <li><a class="nav__link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ========== Page Header ========== -->
+        <div class="page-header">
+            <div class="container">
+                <h1>Map Gallery</h1>
+            </div>
+        </div>
+
+        <!-- ========== Gallery Grid ========== -->
+        <section class="section">
+            <div class="container">
+                <div class="gallery-grid" id="gallery-grid">
+
+                    <button type="button" class="gallery-tile" data-gallery-index="0">
+                        <img src="MapGallery/Aus blue carbon map 2021.jpg"
+                             alt="Blue carbon map of Australian coastal ecosystems, 2021"
+                             loading="lazy">
+                    </button>
+
+                    <button type="button" class="gallery-tile" data-gallery-index="1">
+                        <img src="MapGallery/Drone sample Arenillas 2023.png"
+                             alt="Drone map of Arenillas restoration site, 2023"
+                             loading="lazy">
+                    </button>
+
+                    <button type="button" class="gallery-tile" data-gallery-index="2">
+                        <img src="MapGallery/Flooding probability Wilson et al 2022.webp"
+                             alt="Flooding probability map from Wilson et al., 2022"
+                             loading="lazy">
+                    </button>
+
+                    <button type="button" class="gallery-tile" data-gallery-index="3">
+                        <img src="MapGallery/Nisqually Habitat closeup - Fig6 - Moritsch 2022.png"
+                             alt="Nisqually habitat closeup map from Moritsch, 2022"
+                             loading="lazy">
+                    </button>
+
+                    <button type="button" class="gallery-tile" data-gallery-index="4">
+                        <img src="MapGallery/PacIOOS AmSam EnvFav 2023.png"
+                             alt="PacIOOS American Samoa environmental favorability map, 2023"
+                             loading="lazy">
+                    </button>
+
+                    <button type="button" class="gallery-tile" data-gallery-index="5">
+                        <img src="MapGallery/Story Map Stanford Marin Coastal Hazards.png"
+                             alt="Story Map of Stanford Marin coastal hazards analysis"
+                             loading="lazy">
+                    </button>
+
+                    <button type="button" class="gallery-tile" data-gallery-index="6">
+                        <img src="MapGallery/Story Map USGS Snapshot.png"
+                             alt="USGS Story Map snapshot of coastal research"
+                             loading="lazy">
+                    </button>
+
+                    <button type="button" class="gallery-tile" data-gallery-index="7">
+                        <img src="MapGallery/UtilitiesElevatedExposure.png"
+                             alt="Utilities elevated exposure analysis map"
+                             loading="lazy">
+                    </button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Gallery Lightbox ========== -->
+    <div class="gallery-lightbox" id="gallery-lightbox" hidden aria-hidden="true">
+        <div class="gallery-lightbox__backdrop" data-gallery-close></div>
+        <div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Map image viewer">
+            <button type="button" class="gallery-lightbox__close" data-gallery-close aria-label="Close image viewer">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <button type="button" class="gallery-lightbox__arrow gallery-lightbox__arrow--prev" data-gallery-prev aria-label="Previous image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="gallery-lightbox__content">
+                <img id="gallery-lightbox-image" src="" alt="">
+                <div class="gallery-lightbox__caption" id="gallery-lightbox-caption"></div>
+            </div>
+            <button type="button" class="gallery-lightbox__arrow gallery-lightbox__arrow--next" data-gallery-next aria-label="Next image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <nav class="footer__links" aria-label="Footer links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#work">Work</a>
+                <a href="publications.html">Publications</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <p>&copy; <span id="copyright-year"></span> Monica Moritsch, PhD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
